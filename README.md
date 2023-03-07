@@ -14,12 +14,14 @@ Overall the linear model does have a strong confidence to predict the mpg of the
 
 
 ## Summary Statistics on Suspension Coils (Deliverable 2)
+**Total Summary**
 ![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
+**Lot Summary**
 ![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
 Looking at the total_summary table we can see that all the lots in total are under the allotted 100 pounds per square inch, with a variance of 62.3 PSI. Once we look at the data grouped by lots in the lot_summary we can see that both Lot 1 and Lot 2 are well under the 100 PSI variance but, Lot 3 is currently not meeting the design specifications with a variance of 170.3.
 
 ## T-Tests on Suspension Coils (Deliverable 3)
-Total PSI t-test
+**Total PSI t-test**
 ![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
 When looking at all manufacturing lots together as a whole we can see from that t-test our p-value is 0.06 and with a confidence level of 0.05, we do not have sufficient evidence to say the PSI from all manufacturing lots together is statistically different from the population mean of 1,500 PSI.
 
