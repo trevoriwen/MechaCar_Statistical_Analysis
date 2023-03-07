@@ -1,39 +1,52 @@
 # MechaCar_Statistical_Analysis
 
-## MechaCar_Statistical_Analysis
-Text
+## Overview of MechaCar Statistical Analysis
+Tasked with performing data analytics using R for AutoRU's newest prototype, MechaCar. In this analysis we are performing a multiple linear regression to predict mpg, collecting the summary statistics of the suspension coil PSI, running t-tests to determine if any manufacturing lots are statistically different in PSI, as well as designing a statistical study of MechaCar vehicles against other manufacturers. 
 
 ## Linear Regression to Predict MPG (Deliverable 1)
-![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
-
 The variables that provided a non-random amount of variance shown, in green, were vehicle_length and ground_clearance, as well as the intercept with a p-value significantly less than the confidence level of 0.05. 
 
 The slope of the linear model should not be considered zero because our overall p-value highlighted in yellow is significantly less than our 0.05 confidence level.
 
 Overall the linear model does have a strong confidence to predict the mpg of the MechaCar prototypes effectively, because the r-squared value is on the strong side of correlation being above 0.7 along with our p-value well below the confidence level of 0.05.
 
+<img src="img/Deliverable_1.png" width="500">
 
 ## Summary Statistics on Suspension Coils (Deliverable 2)
-**Total Summary**
-![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
-**Lot Summary**
-![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
 Looking at the total_summary table we can see that all the lots in total are under the allotted 100 pounds per square inch, with a variance of 62.3 PSI. Once we look at the data grouped by lots in the lot_summary we can see that both Lot 1 and Lot 2 are well under the 100 PSI variance but, Lot 3 is currently not meeting the design specifications with a variance of 170.3.
+
+**Total Summary**
+
+<img src="img/total_summary.PNG" width="400">
+
+**Lot Summary**
+
+<img src="img/lot_summary.PNG" width="600">
 
 ## T-Tests on Suspension Coils (Deliverable 3)
 **Total PSI t-test**
-![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
+
 When looking at all manufacturing lots together as a whole we can see from that t-test our p-value is 0.06 and with a confidence level of 0.05, we do not have sufficient evidence to say the PSI from all manufacturing lots together is statistically different from the population mean of 1,500 PSI.
 
-**Lot 1 PSI t-test**
-![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
-**Lot 2 PSI t-test**
-![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
+<img src="img/total_t_test.png" width="500">
+
+**Lot PSI t-tests**
+
 Both Lot 1 and Lot 2 had p-values significantly above the confidence level of 0.05 with p-values of 1 and 0.61 respectively. This means we do not have sufficient evidence to say Lot 1’s and Lot 2’s PSI are statistically different from the mean population of 1,500 PSI.
 
-**Lot 3 PSI t-test**
-![Counting Total Votes Code](Resources/images/election_total_vote.PNG)
 The p-value for Lot 3’s t-test at 0.04 was below the confidence level of 0.05, therefore we have sufficient evidence to say Lot 3’s PSI is statistically different from the population mean of 1,500 PSI.
+
+**Lot 1 PSI t-test**
+
+<img src="img/lot1_t_test.png" width="600">
+
+**Lot 2 PSI t-test**
+
+<img src="img/lot2_t_test.png" width="600">
+
+**Lot 3 PSI t-test**
+
+<img src="img/lot3_t_test.png" width="600">
 
 
 ## Study Design: MechaCar vs Competition (Deliverable 4)
@@ -50,10 +63,11 @@ H0 : The means of both groups are equal, or µ1 = µ2.
 Ha : The means of both groups are different.
 
 #### Test:
-Run ANOVA test on each metric comparing µ1 and µ2
-Obtain p-value
+Run ANOVA test on each metric comparing µ1 and µ2.
 
-#### Result:
+Obtain p-value for results of hypothesis.
+
+#### Results of hypothesis:
 If p-value is greater than or equal to 0.05 then fail to reject null hypothesis, meaning the MechaCar is statistically similar in that metric to its competition.
 If p-value is less than 0.05 then reject null hypothesis, meaning the MechaCar is statistically different then the competition.
 
